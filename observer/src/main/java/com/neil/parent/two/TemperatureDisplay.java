@@ -24,6 +24,7 @@ public class TemperatureDisplay implements Display, Observer {
     public void update(Observable o, Object arg) {
         if (o instanceof WeatherData) {
             System.out.println("温度板读取push数据:" + arg);
+            // 主动pull
             ValueDTO data = ((WeatherData) o).getValueDTO();
             this.valueDTO = data;
             System.out.println("温度板拉取pull数据:" + JSONUtil.toJsonStr(data));
