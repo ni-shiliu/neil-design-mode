@@ -17,6 +17,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>observer</module>
+        <module>decorator</module>
     </modules>
 
     <properties>
