@@ -11,7 +11,7 @@ import java.util.List;
  * @date 2023/10/25
  */
 @Data
-public class MapRouteContent {
+public class MapRouteContext {
 
     private List<RouteStrategy> routeStrategyList;
 
